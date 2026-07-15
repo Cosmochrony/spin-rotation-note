@@ -5,7 +5,7 @@ J. Beau, Independent Researcher, France
 ## Status
 
 Preprint, v1.0. Companion conceptual/structural audit of the fermionic-matter sub-programme.
-Not yet deposited (DOI pending; see `zenodo.json`).
+DOI: [10.5281/zenodo.21380026](https://doi.org/10.5281/zenodo.21380026)
 
 ## Abstract
 
