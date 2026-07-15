@@ -7,6 +7,7 @@ authors:
     given-names: "Jérôme"
 repository-code: "https://github.com/Cosmochrony/spin-rotation-note"
 url: "https://cosmochrony.org/science/fermionic-matter/spin-rotation-note/"
+doi: "10.5281/zenodo.21380026"
 license: "CC-BY-4.0"
 preferred-citation:
   type: article
@@ -15,3 +16,5 @@ preferred-citation:
     - family-names: "Beau"
       given-names: "Jérôme"
   year: 2026
+  doi: "10.5281/zenodo.21380026"
+  url: "https://doi.org/10.5281/zenodo.21380026"
