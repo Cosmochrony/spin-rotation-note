@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you cite this work, please use the metadata from this file."
+title: "Spin as a Transformation Class of Rotating Wave Modes"
+type: software
+authors:
+  - family-names: "Beau"
+    given-names: "Jérôme"
+repository-code: "https://github.com/Cosmochrony/spin-rotation-note"
+url: "https://cosmochrony.org/science/fermionic-matter/spin-rotation-note/"
+license: "CC-BY-4.0"
+preferred-citation:
+  type: article
+  title: "Spin as a Transformation Class of Rotating Wave Modes"
+  authors:
+    - family-names: "Beau"
+      given-names: "Jérôme"
+  year: 2026

@@ -1,0 +1,442 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[hidelinks]{hyperref}
+\usepackage{doi}
+\input{glyphtounicode}
+\pdfgentounicode=1
+\hypersetup{
+  pdftitle={Spin as a Transformation Class of Rotating Wave Modes},
+  pdfauthor={Jerome Beau},
+  pdfkeywords={spin, helicity, spinor, SU(2) representations, univalence, superselection,
+               neutron interferometry, rotating wave modes, Riemann-Silberstein vector}
+}
+
+\newcommand{\ket}[1]{\left|#1\right\rangle}
+
+\title{Spin as a Transformation Class of Rotating Wave Modes}
+\author{J\'er\^ome Beau}
+\date{July 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This note examines the hypothesis that the wave function is a combination of rotating and non-rotating wave
+modes, spin expressing the rotation of these components rather than the rotation of a particle-like object.
+For the photon the hypothesis is nearly literal: the transverse components of a circularly polarized wave
+rotate, and the associated angular momentum is mechanically measurable.
+A scalar counterexample shows that the rotation of components is not sufficient: spin is fixed by the way
+the components transform under rotations of physical space.
+The resulting hierarchy is: the relative phase is a measurable coordinate within a sector, the weight $m$ is
+an axial winding degree, the spin $j$ labels the irreducible representation of $SU(2)$, and univalence
+$(-1)^{2j}$ separates superselection sectors as a rule on the algebra of observables.
+The formulation avoids the historical superluminal-velocity objection, which constrains rigid bodies rather
+than internal rotations of wave components.
+Any rotational ontology of spin must involve a relational, extended, or topologically attached wave
+configuration, never a point particle endowed with a mere internal axis.
+\end{abstract}
+
+\vspace{1em}
+\noindent\textbf{Keywords:} spin; helicity; spinor; $SU(2)$ representations; univalence; superselection;
+neutron interferometry; rotating wave modes; Riemann--Silberstein vector.
+
+\clearpage
+\tableofcontents
+
+\clearpage
+\section{Introduction}
+\label{sec:introduction}
+
+Spin is commonly introduced through negations: a rotation that is not a rotation, an angular momentum that
+is not orbital, a magnetic moment without a current loop.
+Faced with these negations, a natural hypothesis arises, and it is the founding hypothesis of this note:
+the wave function is a combination of rotating and non-rotating wave modes, and spin expresses the rotation
+of these components.
+The rotating entity is from the outset a wave, not a particle-like object endowed with an internal axis;
+the image is suggested by circularly polarized light, where two transverse field components in quadrature
+produce a genuinely rotating field vector.
+The task is then to determine which features of this rotation are physical, which are measurable, and what
+the hypothesis must still explain.
+
+This note assesses that hypothesis systematically.
+Section~\ref{sec:photon} treats the photon, where the hypothesis is at its strongest.
+Section~\ref{sec:rotatingwaves} states the hypothesis in its rigorous form and identifies the
+transformation law of the components under spatial rotations as the decisive criterion.
+Section~\ref{sec:representations} recalls why discrete spin values cannot be identified with particular
+phase angles, and locates the correct discrete structure in the representation theory of $SU(2)$.
+Section~\ref{sec:interferometry} presents the interferometric observability of the spinor sign.
+Section~\ref{sec:univalence} formulates the univalence superselection rule as a statement about the algebra
+of observables.
+Section~\ref{sec:ontology} derives the constraints that any internal-rotation ontology of spin must satisfy,
+and reviews the known constructions that meet them.
+Section~\ref{sec:causality} shows how the rotating-wave formulation dissolves the historical
+superluminal-velocity objection while distinguishing internal rotation from the separate causality problem
+raised by any literal spatial flow.
+Section~\ref{sec:cosmochrony} records the consequences for the Cosmochrony programme.
+Section~\ref{sec:conclusion} states the resulting structural hierarchy.
+
+\section{The photon: rotating fields and helicity}
+\label{sec:photon}
+
+In a plane electromagnetic wave in vacuum the electric and magnetic fields are perpendicular in space but
+oscillate in phase: $\mathbf{B} = \hat{\mathbf{k}} \times \mathbf{E}/c$, and both vanish simultaneously.
+The rotation relevant to spin does not involve a phase shift between $\mathbf{E}$ and $\mathbf{B}$.
+It involves two transverse components of the electric field itself,
+\begin{equation}
+\mathbf{E}(z,t) = E_x \hat{\mathbf{x}} \cos\alpha + E_y \hat{\mathbf{y}} \cos(\alpha + \delta),
+\qquad \alpha = kz - \omega t + \alpha_0 .
+\label{eq:transverse}
+\end{equation}
+For $\delta = \pm\pi/2$ and $E_x = E_y$ the field vector rotates about the propagation axis, and the sense
+of rotation corresponds to the helicity $\lambda = \pm 1$ of the photons, i.e.\ to the projection
+$S_\parallel = \pm\hbar$ of their spin on the propagation direction.
+
+Two facts support the rotational intuition here.
+First, the angular momentum carried by circularly polarized light is mechanically real: a suspended
+birefringent plate experiences a measurable torque when it reverses the polarization of a light
+beam~\cite{Beth1936}.
+Second, the phase relation $\delta$ between the transverse components does determine the polarization state
+and hence the mean helicity.
+
+Two facts, however, bound the intuition.
+Linear polarization ($\delta = 0$ or $\pi$) is not a zero-helicity photon state; it is a coherent
+superposition of the two helicities, and a helicity measurement yields $\pm\hbar$, never $0$.
+The absence of a longitudinal (helicity-zero) mode for the free photon follows from masslessness and gauge
+invariance, through the finite-helicity representations of the massless little group $ISO(2)$, in which the
+translational part acts trivially~\cite{Wigner1939}; Wigner's classification also contains continuous-spin
+representations, and a massive spin-$1$ boson does possess three states.
+Moreover, a one-photon state of definite helicity has a vanishing mean electric field,
+$\langle \mathbf{E} \rangle = 0$, whereas a circularly polarized coherent state has a rotating mean field.
+The rotating classical field is therefore the coherent-state manifestation of the helicity structure, not a
+literal microscopic mechanism of photon spin.
+
+\section{Rotating waves rather than rotating objects}
+\label{sec:rotatingwaves}
+
+The founding hypothesis can now be stated precisely: the rotating entity is not a particle-like object but
+a wave mode, the wave function being a combination of rotating (chiral) and non-rotating components.
+
+For the photon this language is physically literal.
+The state decomposes on the two circular polarization modes,
+$\Psi = \psi_+ \ket{+} + \psi_- \ket{-}$, which are the two helicity sectors, and the Maxwell fields can be
+packaged into the Riemann--Silberstein combinations
+\begin{equation}
+\mathbf{F}_\pm = \mathbf{E} \pm i c \mathbf{B},
+\label{eq:riemannsilberstein}
+\end{equation}
+which separate the sectors of opposite helicity and support a genuine photon wave-function
+formalism~\cite{BialynickiBirula1996}.
+For real Maxwell fields $\mathbf{F}_- = \overline{\mathbf{F}_+}$, so the two combinations are not
+independent real fields; the clean helicity separation is obtained after complexification and restriction
+to the positive-frequency components.
+Speaking of right- and left-rotating waves is then physically pertinent.
+A non-rotating wave, such as a linear polarization, is not a spin-zero state but a coherent superposition of
+the two counter-rotating modes; its mean angular momentum may vanish, yet a helicity measurement always
+yields $\pm\hbar$.
+The distinction $\langle S \rangle = 0$ versus $j = 0$ is essential: the former can result from the mutual
+cancellation of two opposite modes, the latter designates a wave that transforms as a genuine scalar under
+rotations.
+
+A counterexample fixes the decisive criterion.
+A complex scalar wave $\psi = A e^{-i\omega t}$ can be viewed as two real components in quadrature,
+$\psi = A\cos\omega t - iA\sin\omega t$, and thus ``rotates'' in its complex plane; yet its quanta can be of
+spin zero.
+The rotation of two components is therefore not sufficient: what matters is how the components transform
+under rotations of physical space,
+\begin{equation}
+\Psi(\mathbf{x}) \longmapsto D^{(j)}(R)\, \Psi(R^{-1}\mathbf{x}).
+\label{eq:transformationlaw}
+\end{equation}
+If $D(R) = 1$ the wave is scalar (spin $0$); a vectorial $D(R)$ gives spin $1$; a spinorial $D(R)$ changing
+sign after $2\pi$ gives spin $\tfrac12$; higher representations give $j = \tfrac32, 2, \ldots$
+The internal rotation counts only insofar as its plane is geometrically coupled to the directions of
+physical space; a rotation in a purely internal plane, as in the scalar counterexample, carries no spin.
+
+The rotating-wave hypothesis can thus be stated rigorously: a one-particle state is represented by a
+carrier-valued wave amplitude; its spin is fixed by the carrier's transformation law; its spin state
+indicates which combination of waves rotating in the various senses is realized when such a decomposition
+exists.
+For a massive fermion, however, chirality, helicity, and the weight $m$ are distinct notions, and the
+counter-rotating decomposition is literal only in special cases such as photon polarization; in general the
+components form a carrier space whose transformation law, not its visual rotation, defines the spin.
+This is compatible with current physics, and it is native to the ground where the deeper constructions of
+Section~\ref{sec:ontology} operate, since solitons, skyrmions, and Finkelstein--Rubinstein quantization
+concern extended field configurations rather than point objects.
+What remains to be derived is why the components of the wave carry precisely a given representation
+$D^{(j)}$: the rotation of the wave can represent the spin, but the topology and transformation law of the
+wave must still explain why it is scalar, vectorial, or spinorial.
+
+Finally, this internal rotation must be distinguished from a vortex wave,
+$\psi(r, \varphi, z) \propto e^{i\ell\varphi}$, whose phase genuinely winds around a spatial axis and
+produces an orbital angular momentum $L_z = \ell\hbar$.
+A wave can carry both, $J_z = L_z + S_z$, with a spatial orbital winding and an internal polarization
+rotation.
+For the electromagnetic field the split of $J$ into orbital and spin parts is not gauge invariant in full
+generality; it becomes operational in the paraxial regime, where spin and orbital angular momenta of
+Laguerre--Gaussian beams are separately measurable~\cite{Allen1992}.
+The rotating-wave intuition targets the spin part.
+
+\section{Weights, windings, and representations}
+\label{sec:representations}
+
+The temptation is to associate the discrete spin values $j = 0, \tfrac12, 1, \tfrac32, \ldots$ with
+particular phase angles such as $\delta = 0$, $\pi/2$, $\pi$ in Eq.~\eqref{eq:transverse}.
+This fails, because $\delta$ varies continuously and parametrizes states \emph{within} a given state space,
+whereas $j$ labels the space itself through its transformation law under all rotations.
+
+A physical rotation acts on a spin-$\tfrac12$ state by
+\begin{equation}
+U(\mathbf{n}, \alpha) = \exp\!\left(-\frac{i\alpha}{2}\, \mathbf{n} \cdot \boldsymbol{\sigma}\right),
+\label{eq:su2rotation}
+\end{equation}
+so that $U(2\pi) = -I$ and only $U(4\pi) = +I$.
+The topology of the rotation group, $\pi_1(SO(3)) = \mathbb{Z}_2$, explains this dichotomy: it allows
+exactly two behaviours under a $2\pi$ rotation, $U(2\pi) = \pm I$, hence the integer and half-integer
+families.
+But the precise values of $j$ are not elements of $\pi_1$; they arise from the theory of irreducible
+representations of $SU(2)$, where $2j$ is an integer highest weight, the degree of the representation
+$\operatorname{Sym}^{2j}(\mathbb{C}^2)$.
+
+A genuine winding number does survive after restriction to rotations about a fixed axis:
+\begin{equation}
+U_z(\alpha)\, \ket{j, m} = e^{-i m \alpha}\, \ket{j, m},
+\label{eq:weight}
+\end{equation}
+where $2m \in \mathbb{Z}$ is the winding degree of this $U(1)$ character over a full cycle of the covering
+group ($4\pi$).
+If $m$ is half-integer, $e^{-i m (2\pi)} = -1$ and $e^{-i m (4\pi)} = +1$.
+The winding intuition is thus rigorous but axial and local: it describes the weights $m$, and $j$ appears
+only when these weights are organized into a complete $SU(2)$ representation.
+It is also through the finite-helicity representations of the little group, together with the global choice
+of the relevant covering for half-integer values, that the helicity of massless particles is
+quantized~\cite{Wigner1939}.
+
+For a spin-$\tfrac12$ state written as
+\begin{equation}
+\ket{\psi} = \cos\frac{\theta}{2}\, \ket{\uparrow} + e^{i\phi} \sin\frac{\theta}{2}\, \ket{\downarrow},
+\label{eq:bloch}
+\end{equation}
+the continuous relative phase $\phi$ determines the orientation of the state on the Bloch sphere, not the
+intrinsic value of the spin: a measurement along a fixed axis yields only $\pm\hbar/2$.
+
+\section{Interferometric observability of the spinor sign}
+\label{sec:interferometry}
+
+The sign reversal $U(2\pi) = -I$ is a global phase if the whole state is rotated, and as such is
+unobservable.
+It becomes observable when one branch of an interferometer is rotated relative to the other.
+Neutron interferometry realizes this: after a relative $2\pi$ spin rotation the two amplitudes interfere
+with opposite sign, and the initial interference pattern is restored only after
+$4\pi$~\cite{Rauch1975, Werner1975}.
+
+What the experiment detects is not a hidden orientation of the neutron, but the spinorial character of the
+action of rotations on its quantum amplitude.
+The physically real structure is the transformation class of the state under rotations, since a state
+``rotated by $2\pi$'' can be made to interfere with itself and the difference observed.
+The rotation phase itself, by contrast, remains unobservable in isolation.
+
+\section{Univalence as a rule on the algebra of observables}
+\label{sec:univalence}
+
+Since $U(2\pi) = +1$ on integer-spin states and $-1$ on half-integer-spin states, a coherent superposition
+of the two would change its relative phase under a $2\pi$ rotation, that is, under no physical operation at
+all.
+The univalence superselection rule~\cite{Wick1952} draws the consequence.
+
+The rule must be stated carefully.
+It does not forbid writing the vector sum $\ket{\psi_{\mathrm{B}}} + \ket{\psi_{\mathrm{F}}}$ of a bosonic
+and a fermionic state; such a vector exists mathematically.
+It states that no admissible physical observable measures its relative phase.
+Indeed, a $2\pi$ rotation maps
+\begin{equation}
+\ket{\psi_{\mathrm{B}}} + e^{i\phi} \ket{\psi_{\mathrm{F}}}
+\;\longmapsto\;
+\ket{\psi_{\mathrm{B}}} - e^{i\phi} \ket{\psi_{\mathrm{F}}},
+\label{eq:univalence}
+\end{equation}
+and these two descriptions must be physically indistinguishable.
+The phase $\phi$ therefore enters no observable, and the would-be superposition is operationally equivalent
+to the corresponding mixture.
+In relativistic quantum field theory this becomes essentially the superselection of fermion parity.
+
+Two kinds of phase must accordingly be distinguished.
+Within a single sector, as in neutron interferometry where both branches belong to the same half-integer
+sector, relative phases are measurable.
+Between the integer and half-integer sectors, no physical observable can serve as a coherent bridge, and the
+relative phase is suppressed by superselection.
+Univalence is thus a rule about the algebra of observables, not a mathematical impossibility of writing
+vector sums.
+
+\section{Constraints on internal-rotation ontologies}
+\label{sec:ontology}
+
+The preceding results define a precise specification for any interpretation of spin as an underlying
+rotation.
+Such a construction should not merely exhibit something that rotates.
+It should explain why $R(2\pi) \neq I$ while $R(4\pi) = I$ on the underlying object, render the first effect
+observable only by relative comparison, and reproduce the measurement probabilities, relativistic
+covariance, and the integer versus half-integer dichotomy.
+
+A simple rotating arrow fails this test: an arrow returns to itself after $2\pi$.
+The minimal classical configuration with the required topology is exhibited by Dirac's belt trick: a frame
+attached to its environment, whose configuration retains the relation to its surroundings or to the history
+of its rotation.
+A $2\pi$ rotation of such a frame cannot be undone with the attachments held fixed, whereas a $4\pi$
+rotation can.
+This is the ``orientation-entanglement'' of Misner, Thorne, and Wheeler~\cite{Misner1973}.
+
+Orientation-entanglement is not, however, the only construction available.
+Extended objects can acquire fermionic behaviour upon quantization: solitons and skyrmions~\cite{Skyrme1961}
+under the Finkelstein--Rubinstein quantization conditions~\cite{Finkelstein1968}, and gravitational geons in
+the same framework.
+Their common feature confirms the structural lesson: the spinorial sign never comes from a local arrow, but
+from the global topology of the configuration space.
+
+Closest to the initial intuition, Hestenes represents the Dirac spinor as a rotor of the Clifford algebra,
+encoding a local frame, a phase, and a rotation plane, in connection with the zitterbewegung of Dirac
+theory~\cite{Hestenes1990}.
+This is a substantial and illuminating geometric reformulation of the Dirac formalism, but it does not by
+itself derive spin $\tfrac12$ from a more fundamental substructure.
+
+The minimal ontological hypothesis compatible with all constraints is therefore the following: if spin
+originates in an underlying rotation, the rotating entity must be a relational, extended, or topologically
+attached wave configuration, never a point particle endowed with a mere internal axis.
+The rotating-wave formulation of Section~\ref{sec:rotatingwaves} meets the negative part of this
+requirement, since it discards the rigid point-like object; but it does not by itself derive
+$U(2\pi) = -I$, the spinorial topology, or the quantum measurement probabilities, which remain precisely
+the results a deeper construction would have to produce.
+
+\section{Causality and the superluminal-velocity objection}
+\label{sec:causality}
+
+Any rotational model of the electron faces a famous objection: if a sphere of classical electron radius
+carries an angular momentum $\hbar/2$, its equatorial velocity must exceed the speed of light by orders of
+magnitude.
+The difficulty was already noted by Uhlenbeck and Goudsmit themselves~\cite{Uhlenbeck1925}, formulated by
+Lorentz, and later pressed by Pauli against any material interpretation of spin; the detailed history is
+given by Giulini~\cite{Giulini2008} (see also~\cite{Tomonaga1997}).
+The objection targets a specific model: matter distributed at a spatial radius $r$, rotating mechanically at
+angular frequency $\omega$, with local velocity $v = \omega r$.
+Three quantities must therefore be kept distinct: the angular frequency of an internal evolution, the phase
+velocity of a wave pattern, and the tangential velocity of a material distribution.
+Only the third is directly constrained by relativity.
+
+The standard formalism, moreover, assigns the electron no intrinsic mechanical rotation frequency at all.
+A stationary state of definite spin evolves as $\ket{\psi(t)} = e^{-iEt/\hbar} \ket{\mathbf{p}, s}$: the
+global phase rotates at frequency $E/\hbar$ while $\langle \mathbf{S} \rangle$ remains constant.
+Spin precession occurs only in an external magnetic field, at the Larmor frequency
+$\boldsymbol{\Omega}_L \simeq -(gq/2m)\, \mathbf{B}$, which describes the evolution of the quantum
+orientation, not the rotation of a material surface.
+
+For the rotating-wave hypothesis of Section~\ref{sec:rotatingwaves} the objection dissolves.
+A rotation in the internal space of the components, $\Psi \mapsto U(t)\, \Psi$, has for ``radius'' a field
+amplitude, not a distance; the product $\omega r$ is then not a spatial velocity.
+Circular polarization illustrates this: at a fixed point the direction of $\mathbf{E}$ rotates at the
+optical frequency, yet no material surface traverses a circle, and in an ideal plane wave the energy flux
+remains directed along the propagation.
+
+Causality nevertheless remains binding wherever a literal circulation is asserted.
+If a density of charge or energy really circulates around a spatial axis, its local velocity must respect
+relativity; for the electromagnetic field the energy flux obeys $|\mathbf{S}_P| \le c\, u$, with
+$\mathbf{S}_P$ the Poynting vector and $u$ the energy density.
+A phase pattern may travel faster than $c$ without transporting information or energy at that speed, but a
+real flow may not.
+
+The wave formulation admits a field-theoretic reading of this constraint.
+Following Belinfante~\cite{Belinfante1939}, Ohanian showed that the Dirac angular momentum can be expressed
+in terms of a circulating energy flow in the wave field, extended over the Compton scale
+$\lambda_C = \hbar / mc$~\cite{Ohanian1986}.
+This removes the need for a surface velocity $\omega r$ at any assigned radius: the classical paradox arose
+from confining the rotation of a rigid body to the classical electron radius
+$r_e = \alpha \lambda_C \ll \lambda_C$.
+The result must not be over-read, however.
+It establishes an equivalent field-theoretic bookkeeping of the angular momentum as a flow, not literal
+circular trajectories with a unique local velocity, and the electromagnetic bound
+$|\mathbf{S}_P| \le c\, u$ does not transpose automatically to the Dirac energy--momentum tensor.
+A literal hydrodynamic interpretation of this circulation would therefore require a separate causal
+analysis.
+
+The verdict is thus twofold.
+An internal rotation of the wave components raises no superluminal problem at all.
+A spatial-circulation reading is available at the level of the field's energy flow on the Compton scale,
+but its literal hydrodynamic interpretation is not established by the formalism, and the rotating-wave
+hypothesis must refrain from reintroducing, surreptitiously, a mechanical radius of the electron.
+
+\section{Implications for the Cosmochrony programme}
+\label{sec:cosmochrony}
+
+The preceding structure sorts the current state of the Cosmochrony construction~\cite{Cosmochrony} into
+established facts, one exact consequence, one needed correction, one diagnostic, and one open question.
+
+Established: the admissibility construction selects a two-dimensional complex module
+$V_\rho \simeq \mathbb{C}^2$,
+with $\operatorname{Sym}^2(V_\rho) = V_1$ and $\wedge^2(V_\rho) = V_0$, reproducing the Clebsch--Gordan
+content $\tfrac12 \otimes \tfrac12 = 0 \oplus 1$.
+
+Exact algebraic consequence: the central element $-I$ acts on $V_\rho^{\otimes n}$ as $(-1)^n$.
+Conditional on the Lorentz-spin identification of $V_\rho$, this tensor grading becomes the physical
+univalence grading of Section~\ref{sec:univalence}; absent that identification, it remains a grading of the
+admissible $SU(2)$ only.
+
+Correction: in the Q7 construction~\cite{Beau2026q7}, the state $e_0$ must be identified as the $m = 0$
+weight of the $j = 1$ module, not as a $j = 0$ state; the genuine $j = 0$ state is the antisymmetric
+singlet in $\wedge^2(V_\rho)$.
+
+Diagnostic: Lorentzian spin and the weak doublet must act on distinct tensor factors; a single copy of
+$V_\rho$ cannot carry both actions without conflating spacetime and internal symmetries.
+
+Open questions: two distinct problems must be separated.
+The representational problem is to construct the full action
+$\rho_{\mathrm{rot}} \colon \operatorname{Spin}(3) \to U(\mathcal{H}_\Pi)$ with
+$\rho_{\mathrm{rot}}(-I) = (-1)^n I$ on the tensor sector of degree $n$; a one-parameter evolution cannot
+supply the three non-commuting generators of $\operatorname{Spin}(3)$, so the cascade alone cannot solve
+this problem.
+The dynamical problem, stronger, is to determine whether the cascade canonically traces the orbit of an
+axial one-parameter subgroup,
+$U_\Pi(\tau) = \rho_{\mathrm{rot}}\!\left(\exp[-i \alpha(\tau) J_{\mathbf{n}}]\right)$, with both the axis
+$\mathbf{n}$ and the relation $\alpha(\tau)$ derived rather than presupposed.
+Solving the first would be a necessary step toward a rotational derivation of spin; solving the second
+would tie that representation to the cascade dynamics; neither is yet a derivation of the full quantum
+formalism.
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+The founding hypothesis, spin as the rotation of the wave modes composing the wave function, survives in a
+corrected and stratified form:
+\begin{equation}
+\boxed{
+\begin{aligned}
+\text{relative phase} &: \ \text{measurable coordinate within a sector},\\
+m &: \ \text{winding weight of the rotation about an axis},\\
+j &: \ \text{global representation of } SU(2),\\
+(-1)^{2j} &: \ \text{univalence separating the physical sectors}.
+\end{aligned}}
+\label{eq:hierarchy}
+\end{equation}
+Spin is not the instantaneous angle of an internal rotation; it characterizes the global way the wave mode
+transforms under rotations, as expressed by Eq.~\eqref{eq:transformationlaw}.
+A one-particle state is represented by a carrier-valued wave amplitude, and its spin is fixed by the
+carrier's transformation law; only in special cases, notably photon polarization, can its components be
+interpreted literally as counter-rotating modes.
+For the photon this structure manifests itself classically as the chirality of polarization, measurable as
+mechanical angular momentum~\cite{Beth1936}.
+For fermions it requires a spinorial structure whose relative phases have measurable interferometric
+consequences~\cite{Rauch1975, Werner1975}, and whose sign structure partitions the Hilbert space into
+superselection sectors~\cite{Wick1952}.
+The hypothesis escapes the superluminal-velocity objection, which constrains rigid bodies, not internal
+rotations of wave components~\cite{Ohanian1986}.
+The hierarchy of Eq.~\eqref{eq:hierarchy} is thus an experimentally anchored structure fixing the
+specification that any deeper rotational ontology of spin must meet.
+
+\clearpage
+\bibliographystyle{plain}
+\bibliography{cosmochrony-bibliography}
+
+\end{document}
