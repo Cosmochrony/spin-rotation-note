@@ -5,6 +5,7 @@
 \usepackage{lmodern}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{amsthm}
 \usepackage[hidelinks]{hyperref}
 \usepackage{doi}
 \input{glyphtounicode}
@@ -17,6 +18,10 @@
 }
 
 \newcommand{\ket}[1]{\left|#1\right\rangle}
+
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
 
 \title{Spin as a Transformation Class of Rotating Wave Modes}
 \author{J\'er\^ome Beau}
@@ -40,6 +45,11 @@ The formulation avoids the historical superluminal-velocity objection, which con
 than internal rotations of wave components.
 Any rotational ontology of spin must involve a relational, extended, or topologically attached wave
 configuration, never a point particle endowed with a mere internal axis.
+A soldering audit sharpens the programme-facing conclusion into two formal results: an exact
+Veronese-type obstruction excludes the first internal candidate for selecting the compact real form of
+the carrier square, and the currently derived data are shown to leave the spinorial soldering
+indeterminate — the missing data being a phase-sensitive real-form selector, an independent rotation
+action on the emergent space, and a Casimir-independent normalisation.
 \end{abstract}
 
 \vspace{1em}
@@ -79,6 +89,8 @@ Section~\ref{sec:causality} shows how the rotating-wave formulation dissolves th
 superluminal-velocity objection while distinguishing internal rotation from the separate causality problem
 raised by any literal spatial flow.
 Section~\ref{sec:cosmochrony} records the consequences for the Cosmochrony programme.
+Section~\ref{sec:audit} reports the outcome of a soldering audit of those consequences: an unconditional
+Veronese-type obstruction lemma and a corpus-conditional indeterminacy statement.
 Section~\ref{sec:conclusion} states the resulting structural hierarchy.
 
 \section{The photon: rotating fields and helicity}
@@ -404,6 +416,121 @@ $\mathbf{n}$ and the relation $\alpha(\tau)$ derived rather than presupposed.
 Solving the first would be a necessary step toward a rotational derivation of spin; solving the second
 would tie that representation to the cascade dynamics; neither is yet a derivation of the full quantum
 formalism.
+These two problems have since been subjected to a systematic audit against the deposited corpus; its
+formal outcomes are recorded in Section~\ref{sec:audit}.
+
+\section{The soldering audit: a Veronese obstruction and an indeterminacy statement}
+\label{sec:audit}
+
+The open problems of Section~\ref{sec:cosmochrony} were audited against the deposited corpus under a
+pre-registered kill-switch: if the identification of the admissible $SU(2)$ with the double cover of the
+emergent rotations requires a free choice of basis, orientation, compact real form, or a non-derived
+soldering morphism, then the programme does not yet derive physical spin.
+This section records the two formal outcomes: an unconditional obstruction lemma and a corpus-conditional
+indeterminacy statement.
+
+\subsection{Classification of the real forms of the carrier square}
+\label{sec:realforms}
+
+Let $V_\rho \simeq \mathbb{C}^2$ carry the admissible $SU(2)$ action~\cite{Beau2026a33}, let $J$ be its
+quaternionic structure (unique up to a phase), and set $J_\phi = e^{i\phi} J$.
+
+\begin{proposition}[Real forms of $\operatorname{Sym}^2(V_\rho)$]
+\label{prop:realforms}
+(i) Each induced map $J_\phi^{(2)}$ on $\operatorname{Sym}^2(V_\rho)$ is an antilinear involution, with
+fixed real form $W_\phi = e^{i\phi} W_0$, where
+$W_0 = \operatorname{span}_{\mathbb{R}}\{x_1 + x_3,\; i(x_1 - x_3),\; i x_2\}$ in the basis
+$\{x_1 = e_1 e_1,\, x_2 = e_1 e_2,\, x_3 = e_2 e_2\}$.
+(ii) The $W_\phi$ form a circle of distinct real three-dimensional forms, permuted by the center of
+$U(2)$ and not by $SU(2)$; each is $SU(2)$-invariant.
+(iii) The induced real action on each $W_\phi$ is $SO(3)$, with kernel exactly $\{\pm I\}$.
+(iv) Neither the Hermitian metric of the unitary structure nor the invariant bilinear form $B$, defined
+only up to $\mathbb{C}^*$, distinguishes the $W_\phi$: the rescaled form $B_\phi = e^{-2i\phi} B$
+restores the same positive Gram matrix $\operatorname{diag}(2, 2, \tfrac12)$ on every $W_\phi$.
+\end{proposition}
+
+\begin{proof}
+All statements reduce to polynomial identities on the Cayley--Klein chart, verified by direct symbolic
+computation: $U E = E \overline{U}$ for every $U \in SU(2)$ with $E$ the matrix of $J$, hence
+$\operatorname{Sym}^2(U E) = \operatorname{Sym}^2(E \overline{U})$ (invariance of every $W_\phi$,
+without using the unit-norm constraint); $S^T B S = (|a|^2 + |b|^2)^2 B$ identically for
+$S = \operatorname{Sym}^2(U)$ (invariance of $B$ on $SU(2)$); and $\operatorname{Sym}^2(U) = I$ forces
+$b = 0$ and $a = \pm 1$, so the kernel equals $\{\pm I\}$ rather than merely containing it.
+\end{proof}
+
+The residual central $U(1)/\{\pm 1\}$ ambiguity is therefore intrinsic to the data
+$(V_\rho, SU(2), h, B)$: a real-form selector must be a corpus-derived, phase-sensitive datum.
+
+\subsection{A Veronese obstruction to the first internal selector}
+\label{sec:veronese}
+
+The natural internal candidate for such a selector is the family of per-pair outer products
+$M_j = w_j w_j^{\mathsf{T}}$ that spans $\mathcal{H}_{\mathrm{eff}} \simeq
+\operatorname{Sym}^2(V_\rho)$~\cite{Beau2026a32}: if their real span coincided with a single $W_\phi$,
+the phase would be fixed by projection data.
+This candidate is excluded exactly.
+
+\begin{lemma}[Veronese-null versus compact real form]
+\label{lem:veronese}
+For $w = (u, v) \in \mathbb{C}^2$, the pure tensor $M = w w^{\mathsf{T}}$ has coordinates
+$(u^2,\, 2uv,\, v^2)$ and satisfies $B(M, M) = 2 u^2 v^2 - \tfrac12 (2uv)^2 = 0$: every nonzero pure
+tensor lies on the complex null cone of $B$ (the Veronese cone).
+Since every $W_\phi$ is positive definite for $B_\phi$, it meets the null cone only in $0$.
+\end{lemma}
+
+\begin{corollary}
+\label{cor:noselector}
+$\operatorname{span}_{\mathbb{R}}\{M_j\} \neq W_\phi$ for every $\phi$, even when that real span has
+dimension exactly three: the outer products of~\cite{Beau2026a32} cannot select the real form.
+\end{corollary}
+
+\begin{proof}
+Each $M_j$ lies in $\operatorname{span}_{\mathbb{R}}\{M_j\}$ and on the null cone; a nonzero null vector
+cannot lie in a subspace on which the (rescaled) form is definite.
+\end{proof}
+
+\subsection{Corpus inventory and the indeterminacy statement}
+\label{sec:indeterminacy}
+
+The audit traced the remaining soldering inputs through the deposited corpus.
+First, the normalisation: the spatial coefficient $A_Z = 2$ is set equal to the $j = 1$ Casimir
+eigenvalue in~\cite{BeauQ8} and inherited by~\cite{Beau2026q10} and~\cite{Beau2026q11}, whereas the
+isotropic \emph{shape} of the effective metric is derived independently (Born--Infeld parity, the
+universality theorem [U] of~\cite{Beau2026u1}, and the absence of cross terms proved
+in~\cite{Beau2026q7}).
+The identity ``effective metric $=$ Casimir'' is therefore currently definitional rather than a match;
+a Casimir-independent normalisation (for instance the announced sub-principal-symbol route
+of~\cite{BeauQ8}) remains to be executed.
+Second, the target action: the deposited corpus defines no rotation action on the three effective
+directions independent of the admissible module — the concrete symmetries are the $U(1)$ generated by
+$J_3$ and the metaplectic horizontal rotation, and the rotational structure of the effective space is
+transported through the bridge of~\cite{Beau2026q7}, conditionally on that bridge.
+Third, orientation is \emph{not} blocking: the chiral orientation result
+[H-orient]~\cite{Beau2026cho, Beau2026aog}, established within the present spin stratum by purely
+representation-theoretic and arithmetic means, uses no soldering morphism and can therefore orient a
+future one without circularity.
+
+The outcome is a conditional statement, relative to the inventory just listed.
+
+\begin{proposition}[Indeterminacy of the spinorial soldering]
+\label{prop:indeterminacy}
+The currently derived data — the admissible module $V_\rho$ with its unitary structure and invariant
+form, the central grading $(-1)^n$ on $V_\rho^{\otimes n}$, the isotropic shape of the effective metric,
+and the horizontal symmetries — determine the complex carrier and its univalence, but are invariant
+under the residual family of solderings parametrised by the circle $\{W_\phi\}$ and admit no
+independently defined intertwining target.
+They therefore determine neither the spatial realisation of the carrier, nor a physical rotation action,
+nor its scale.
+\end{proposition}
+
+The missing soldering thus comprises exactly three data: a phase-sensitive real-form selector (any
+real-span candidate must supply derived vectors of nonzero $B$-norm, by Lemma~\ref{lem:veronese}), an
+independent rotation action $\rho_{\mathrm{sp}}$ on the effective space, and a Casimir-independent
+normalisation.
+Their priority order is structural: the absence of $\rho_{\mathrm{sp}}$ is irrecoverable by the other
+two.
+Lemma~\ref{lem:veronese} is unconditional mathematics; Proposition~\ref{prop:indeterminacy} is
+conditional on the listed corpus inventory and is falsified the day any of the three data is derived.
 
 \section{Conclusion}
 \label{sec:conclusion}
@@ -434,6 +561,13 @@ The hypothesis escapes the superluminal-velocity objection, which constrains rig
 rotations of wave components~\cite{Ohanian1986}.
 The hierarchy of Eq.~\eqref{eq:hierarchy} is thus an experimentally anchored structure fixing the
 specification that any deeper rotational ontology of spin must meet.
+The soldering audit of Section~\ref{sec:audit} turns that specification into a falsifiable programme
+statement: the deposited construction owns the abstract spinorial carrier, its exact double cover, and
+its univalence grading, and provably does not yet own physical spin — the rotational soldering is
+missing and is typed as three data, with the independent rotation action $\rho_{\mathrm{sp}}$ as the
+structurally blocking one.
+The founding hypothesis is thereby neither confirmed nor vague: each failed candidate now produces a
+lemma, as Lemma~\ref{lem:veronese} illustrates.
 
 \clearpage
 \bibliographystyle{plain}
