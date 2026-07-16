@@ -4,13 +4,16 @@ J. Beau, Independent Researcher, France
 
 ## Status
 
-Preprint, v1.2. Companion conceptual/structural audit of the fermionic-matter sub-programme.
+Preprint, v1.3. Companion conceptual/structural audit of the fermionic-matter sub-programme.
 DOI: [10.5281/zenodo.21380026](https://doi.org/10.5281/zenodo.21380026)
 v1.1 adds the soldering-audit section: the Veronese obstruction lemma and the spinorial-soldering
 indeterminacy proposition.
 v1.2 is a rigour consolidation after review: surjectivity argument completed in the real-form
 classification proof; the indeterminacy proposition's falsifiability clause restated exactly; the
 three missing data qualified as independently missing, with the joint-sufficiency question left open.
+v1.3 adds the mandatory labelled interpretive outlook in both abstract and conclusion: the audit
+neither confirms nor refutes the rotating-wave hypothesis; it turns its realisation within Cosmochrony
+into an explicit derivation problem with testable success and failure criteria.
 
 ## Abstract
 
