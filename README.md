@@ -4,8 +4,10 @@ J. Beau, Independent Researcher, France
 
 ## Status
 
-Preprint, v1.0. Companion conceptual/structural audit of the fermionic-matter sub-programme.
+Preprint, v1.1. Companion conceptual/structural audit of the fermionic-matter sub-programme.
 DOI: [10.5281/zenodo.21380026](https://doi.org/10.5281/zenodo.21380026)
+v1.1 adds the soldering-audit section: the Veronese obstruction lemma and the spinorial-soldering
+indeterminacy proposition.
 
 ## Abstract
 
@@ -37,6 +39,14 @@ wave configuration, never a point particle endowed with a mere internal axis.
 5. **Open**: the representational problem (constructing the full Spin(3) action rho_rot with
    rho_rot(-I) = (-1)^n) and the stronger dynamical problem (whether the cascade canonically
    traces an axial one-parameter orbit, with axis and angle relation both derived).
+6. **Proved (v1.1, unconditional)**: the Veronese-null versus compact-real-form lemma — nonzero
+   pure tensors w w^T lie on the null cone of the invariant form, so they meet no compact real
+   form W_phi; the first internal real-form selector candidate (O28 outer products) is excluded.
+7. **Conditional on the listed corpus inventory (v1.1)**: the spinorial-soldering indeterminacy
+   proposition — the derived data fix the complex carrier and its univalence but determine
+   neither the spatial realisation, nor a physical rotation action, nor its scale; the missing
+   soldering is typed as three data (phase-sensitive real-form selector, independent rotation
+   action rho_sp, Casimir-independent normalisation), with rho_sp structurally blocking.
 
 ## Position in the programme
 
