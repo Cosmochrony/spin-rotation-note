@@ -41,6 +41,18 @@ The formulation avoids the historical superluminal-velocity objection, which con
 bodies rather than internal rotations of wave components.
 Any rotational ontology of spin must involve a relational, extended, or topologically attached
 wave configuration, never a point particle endowed with a mere internal axis.
+A soldering audit sharpens the programme-facing conclusion into two formal results: an exact
+Veronese-type obstruction excludes the first internal candidate for selecting the compact real
+form of the carrier square, and the currently derived data are shown to leave the spinorial
+soldering indeterminate, missing a phase-sensitive real-form selector, an independent rotation
+action, and a Casimir-independent normalisation.
+A downstream reconnaissance shows $\overline{\psi_R}\psi_L$ carries Higgs-typed quantum numbers
+($H$ or $\widetilde{H}$) in every Yukawa sector, permitting but not generating a composite
+condensate.
+Interpretive outlook (not a result): these findings leave open two structural readings.
+A future derived and sufficient soldering could make rotations effective symmetries of projected
+geometry, whereas an irreducible residual indeterminacy would be consistent with treating the
+spinorial carrier as prior to space.
 
 ## Epistemic status of the Cosmochrony-facing claims
 
