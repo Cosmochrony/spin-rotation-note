@@ -16,8 +16,9 @@ neither confirms nor refutes the rotating-wave hypothesis; it turns its realisat
 into an explicit derivation problem with testable success and failure criteria.
 v1.4 adds an independent downstream reconnaissance, entirely separate from the soldering audit: an
 exact representation audit under Spin(3,1) x SU(3)_c x SU(2)_L x U(1)_Y shows that the
-Dirac-conjugated fermionic bilinear psibar_R psi_L carries exactly the Higgs doublet's electroweak
-quantum numbers in every tree-level Yukawa sector (e, d, u). Spinorial chiral structure is thereby
+Dirac-conjugated fermionic bilinear psibar_R psi_L carries exactly Higgs-typed electroweak quantum
+numbers (the doublet H or its conjugate Htilde) in every tree-level Yukawa sector (e, d, u).
+Spinorial chiral structure is thereby
 shown to permit Higgs-typed composite channels, but not to determine whether, which, or at what scale
 such a channel condenses; three data remain explicitly open (an ambient doubling beyond V_rho, an
 inter-sector identification mechanism, and the condensation dynamics itself). The soldering audit of
