@@ -14,7 +14,8 @@
   pdftitle={Spin as a Transformation Class of Rotating Wave Modes},
   pdfauthor={Jerome Beau},
   pdfkeywords={spin, helicity, spinor, SU(2) representations, univalence, superselection,
-               neutron interferometry, rotating wave modes, Riemann-Silberstein vector}
+               neutron interferometry, rotating wave modes, Riemann-Silberstein vector,
+               chiral transversality, composite Higgs}
 }
 
 \newcommand{\ket}[1]{\left|#1\right\rangle}
@@ -50,6 +51,10 @@ Veronese-type obstruction excludes the first internal candidate for selecting th
 the carrier square, and the currently derived data are shown to leave the spinorial soldering
 indeterminate — the missing data being a phase-sensitive real-form selector, an independent rotation
 action on the emergent space, and a Casimir-independent normalisation.
+A separate, independent downstream reconnaissance shows that the Dirac-conjugated fermionic bilinear
+$\overline{\psi_R} \psi_L$ carries exactly the Higgs doublet's electroweak quantum numbers in every
+tree-level Yukawa sector, so that spinorial chiral structure permits, but does not by itself generate,
+a composite Higgs condensate.
 Interpretive outlook (not a result): these findings leave open two structural readings.
 A future derived and sufficient soldering could make rotations effective symmetries of projected
 geometry, whereas an irreducible residual indeterminacy would be consistent with treating the spinorial
@@ -58,7 +63,8 @@ carrier as prior to space.
 
 \vspace{1em}
 \noindent\textbf{Keywords:} spin; helicity; spinor; SU(2) representations; univalence; superselection;
-neutron interferometry; rotating wave modes; Riemann--Silberstein vector.
+neutron interferometry; rotating wave modes; Riemann--Silberstein vector; chiral transversality;
+composite Higgs.
 
 \clearpage
 \tableofcontents
@@ -93,6 +99,9 @@ Section~\ref{sec:causality} shows how the rotating-wave formulation dissolves th
 superluminal-velocity objection while distinguishing internal rotation from the separate causality problem
 raised by any literal spatial flow.
 Section~\ref{sec:cosmochrony} records the consequences for the Cosmochrony programme.
+Section~\ref{sec:higgsboundary} reports an independent downstream reconnaissance: an exact
+representation audit showing that fermionic chiral bilinears carry the Higgs doublet's quantum
+numbers, without deriving a composite condensate or its uniqueness.
 Section~\ref{sec:audit} reports the outcome of a soldering audit of those consequences: an unconditional
 Veronese-type obstruction lemma and a corpus-conditional indeterminacy statement.
 Section~\ref{sec:conclusion} states the resulting structural hierarchy.
@@ -422,6 +431,138 @@ would tie that representation to the cascade dynamics; neither is yet a derivati
 formalism.
 These two problems have since been subjected to a systematic audit against the deposited corpus; its
 formal outcomes are recorded in Section~\ref{sec:audit}.
+A separate, independent downstream reconnaissance, reported next in Section~\ref{sec:higgsboundary},
+asks whether the same chiral structure typed by Eq.~\eqref{eq:transformationlaw} has a further
+physical role: whether it is what lets a fermionic wave couple to the Higgs condensate.
+
+\section{Downstream boundary: chiral transversality and Higgs-typed composite channels}
+\label{sec:higgsboundary}
+
+The transformation-law criterion of Eq.~\eqref{eq:transformationlaw} already fixes what carries spin.
+A natural downstream question is whether the same chiral structure is what lets a fermionic wave
+couple to the Higgs condensate, as opposed to some other, non-interacting spin assignment.
+Stated loosely, this conflates several notions this note has kept apart (spin, helicity, chirality).
+Stated precisely, it asks whether the two Lorentz-chiral components $S_L, S_R$ of a spin-$\tfrac12$
+carrier admit a transverse operator, supplied by the Higgs condensate, converting one into the other,
+with mass measuring the norm of that inter-chiral incidence.
+This section reports an exact reconnaissance of that question, entirely downstream of, and
+independent from, the soldering audit of Section~\ref{sec:audit}: it neither uses nor repairs the
+missing rotational soldering $\rho_{\mathrm{sp}}$, and its results hold whether or not that soldering
+is ever supplied.
+
+\subsection{The chiral Hamiltonian and Bloch-vector precession}
+\label{sec:chiralhamiltonian}
+
+For fixed helicity $\eta = \pm 1$, in the chiral basis $(\psi_L, \psi_R)$, the standard electroweak
+Yukawa coupling~\cite{Weinberg1967, Higgs1964} gives the two-level Hamiltonian
+\begin{equation}
+H_\eta = \mathbf{B}_\eta \cdot \boldsymbol{\tau}, \qquad
+\mathbf{B}_\eta = \bigl(\operatorname{Re} m,\, -\operatorname{Im} m,\, -\eta |\mathbf{p}|\bigr),
+\label{eq:chiralham}
+\end{equation}
+with $\boldsymbol{\tau}$ the Pauli matrices acting on the chiral index and
+$m = (y/\sqrt2)(v + h)$ the position-dependent Yukawa mass term.
+Verified by exact symbolic computation (script cited in Section~\ref{sec:reproducibility}):
+\begin{equation}
+H_\eta^2 = \bigl(|\mathbf{p}|^2 + |m|^2\bigr) I, \qquad
+\text{eigenvalues } \pm\sqrt{|\mathbf{p}|^2 + |m|^2},
+\label{eq:chiralspectrum}
+\end{equation}
+and the chiral pseudo-spin $\mathbf{s} = \langle \boldsymbol{\tau} \rangle$ precesses as
+\begin{equation}
+\dot{\mathbf{s}} = 2\, \mathbf{B}_\eta \times \mathbf{s},
+\label{eq:chiralprecession}
+\end{equation}
+an exact operator identity, $i[H_\eta, \tau_i] = 2 (\mathbf{B}_\eta \times \boldsymbol{\tau})_i$ for
+each $i$, verified symbolically rather than in a particular representation.
+At $m = 0$ the chiralities decouple exactly.
+Under relative chiral rephasing $\psi_L \mapsto e^{i\alpha} \psi_L$, $\psi_R \mapsto e^{i\beta} \psi_R$,
+$m \mapsto m\, e^{i(\beta - \alpha)}$, so $H_\eta$ transforms into itself with $m$ rotated: $\arg m$ is
+the basis-dependent orientation of the transverse chiral component, removable for a single Dirac
+sector by this rephasing.
+Only a phase invariant under every such single-sector rephasing, necessarily built from a relative
+comparison across several Yukawa matrices such as a CKM-type phase, can be physical.
+This precession is the exact content behind ``the Higgs condensate as a transverse chiral
+direction'': a statement about the chiral Bloch vector $\mathbf{s}$, never about a spatial rotation
+of the wave, and it must not be conflated with the transformation law of
+Eq.~\eqref{eq:transformationlaw} that fixes spin itself.
+
+\subsection{Higgs-typed composite channels: exact representation content}
+\label{sec:compositegate}
+
+The chiral picture above reproduces known electroweak structure and says nothing new by itself.
+The open question is representational: does the Dirac-conjugated bilinear $\overline{\psi_R} \psi_L$
+carry the Higgs doublet's quantum numbers, so that a dynamical condensate of that bilinear, in the
+spirit of the dynamical-symmetry-breaking mechanism of~\cite{NambuJonaLasinio1961} and of the
+top-quark-condensate construction of~\cite{BardeenHillLindner1990}, could in principle realise an
+effective composite Higgs doublet?
+This subsection answers only the representation-theoretic half of that question, for each tree-level
+Yukawa sector ($e$, $d$, $u$), exactly, under
+$\operatorname{Spin}(3,1) \times SU(3)_c \times SU(2)_L \times U(1)_Y$:
+\begin{itemize}
+\item \textbf{Lorentz scalar:} writing the infinitesimal $SL(2,\mathbb{C})$ action on left/right
+  two-component spinors with a shared rotation generator and opposite-sign boost
+  generators~\cite{DreinerHaberMartin2010}, the operator identity
+  $\mathrm{gen}_R^\dagger + \mathrm{gen}_L = 0$ holds exactly for arbitrary rotation and boost
+  parameters: $\psi_R^\dagger \psi_L$ is Lorentz-invariant.
+\item \textbf{Color:} the quark channels $\overline{d}_R Q_L$ and $\overline{u}_R Q_L$ are exact
+  $SU(3)_c$ singlets, verified as an exact invariance identity under all eight Gell-Mann generators.
+\item \textbf{Weak isospin and hypercharge:} the $SU(2)_L$ content is the trivial doublet
+  $1 \otimes 2 = 2$; exact hypercharge arithmetic gives
+  \begin{equation}
+  \begin{array}{c|c|c}
+  \text{composite channel} & Y & \text{Higgs type} \\ \hline
+  \overline{e}_R L_L & +\tfrac12 & H \\
+  \overline{d}_R Q_L & +\tfrac12 & H \\
+  \overline{u}_R Q_L & -\tfrac12 & \widetilde{H}
+  \end{array}
+  \label{eq:higgstable}
+  \end{equation}
+  with $\widetilde{H} = i \sigma_2 H^*$ the conjugate doublet.
+\item \textbf{Electroweak breaking:} each channel has an exact electrically neutral slot
+  ($Q = T_3 + Y = 0$) annihilated by the unbroken $U(1)_{\mathrm{em}}$ generator.
+\end{itemize}
+All identities above are verified by exact symbolic computation with no sampling.
+
+\subsection{Stratified verdict}
+\label{sec:higgsverdict}
+
+Every channel is separately Higgs-typed; no computation here supplies a canonical map identifying the
+three channels, built respectively from the lepton doublet and from the two quark chiralities, as
+conjugate realisations of one composite order.
+The audited gauge group $\operatorname{Spin}(3,1) \times SU(3)_c \times SU(2)_L \times U(1)_Y$
+contains no generator relating the lepton sector to either quark sector: the three channels are
+independently typed, not images of one another under that group.
+\begin{equation}
+\boxed{
+\begin{aligned}
+\text{spinorial chirality} &\;\Longrightarrow\; \text{Higgs-typed composite channels are allowed},\\
+\text{spinorial rotation} &\;\not\Longrightarrow\; \text{a unique Higgs condensate is generated}.
+\end{aligned}}
+\label{eq:higgsverdict}
+\end{equation}
+Three data remain open, and must not be collapsed into one.
+(i) The composite-channel construction of Section~\ref{sec:compositegate} requires each fermion to
+simultaneously carry Lorentz-chiral, electroweak, and (for quarks) color structure: exactly the
+ambient enlargement beyond a single copy of $V_\rho$ already flagged as required, and not yet
+supplied, by the diagnostic of Section~\ref{sec:cosmochrony}.
+(ii) A canonical mechanism relating or selecting the three channels as a single common order is
+absent from the audited gauge content.
+(iii) The condensation dynamics itself, and the selection of the electroweak scale, remain
+undetermined.
+Conditional on (i), this audit leaves (iii) as the next obstruction to producing at least one
+composite Higgs channel; producing one universal Higgs order shared by all three Yukawa sectors
+additionally requires (ii).
+Opening any of these three is a new front, materially larger than this reconnaissance, and is not
+undertaken here.
+
+\subsection{Reproducibility}
+\label{sec:reproducibility}
+
+All identities of this section are verified by an exact symbolic script,
+\texttt{code/\allowbreak front\_\allowbreak spinorial\_\allowbreak higgs\_\allowbreak
+transversality.py} (pinned \texttt{sympy==1.14.0}, no sampling), documented and run from a fresh
+environment as described in the README.
 
 \section{The soldering audit: a Veronese obstruction and an indeterminacy statement}
 \label{sec:audit}
@@ -578,6 +719,11 @@ missing and is typed as three data, with the independent rotation action $\rho_{
 structurally blocking one.
 The founding hypothesis is thereby neither confirmed nor vague: each failed candidate now produces a
 lemma, as Lemma~\ref{lem:veronese} illustrates.
+A separate downstream reconnaissance (Section~\ref{sec:higgsboundary}) shows that the same chiral
+structure typed by Eq.~\eqref{eq:transformationlaw} is compatible with, but does not derive, a further
+physical role: fermionic chiral bilinears carry exactly the Higgs doublet's quantum numbers in every
+audited Yukawa sector, while neither the physical rotation of the wave, the gauge group, nor this
+representation typing determines whether, which, or at what scale such a bilinear condenses.
 
 \subsection*{Interpretive outlook}
 
@@ -594,6 +740,9 @@ Its result is to locate the exact boundary between what the present construction
 still postulates.
 It therefore neither confirms nor refutes the rotating-wave hypothesis; it turns its realisation within
 Cosmochrony into an explicit derivation problem with testable success and failure criteria.
+The downstream boundary of Section~\ref{sec:higgsboundary} is independent of the soldering question
+addressed here: it neither uses nor repairs the missing rotational soldering $\rho_{\mathrm{sp}}$, and
+holds under either of the two readings above.
 
 \clearpage
 \bibliographystyle{plain}

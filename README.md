@@ -4,7 +4,7 @@ J. Beau, Independent Researcher, France
 
 ## Status
 
-Preprint, v1.3. Companion conceptual/structural audit of the fermionic-matter sub-programme.
+Preprint, v1.4. Companion conceptual/structural audit of the fermionic-matter sub-programme.
 DOI: [10.5281/zenodo.21380026](https://doi.org/10.5281/zenodo.21380026)
 v1.1 adds the soldering-audit section: the Veronese obstruction lemma and the spinorial-soldering
 indeterminacy proposition.
@@ -14,6 +14,14 @@ three missing data qualified as independently missing, with the joint-sufficienc
 v1.3 adds the mandatory labelled interpretive outlook in both abstract and conclusion: the audit
 neither confirms nor refutes the rotating-wave hypothesis; it turns its realisation within Cosmochrony
 into an explicit derivation problem with testable success and failure criteria.
+v1.4 adds an independent downstream reconnaissance, entirely separate from the soldering audit: an
+exact representation audit under Spin(3,1) x SU(3)_c x SU(2)_L x U(1)_Y shows that the
+Dirac-conjugated fermionic bilinear psibar_R psi_L carries exactly the Higgs doublet's electroweak
+quantum numbers in every tree-level Yukawa sector (e, d, u). Spinorial chiral structure is thereby
+shown to permit Higgs-typed composite channels, but not to determine whether, which, or at what scale
+such a channel condenses; three data remain explicitly open (an ambient doubling beyond V_rho, an
+inter-sector identification mechanism, and the condensation dynamics itself). The soldering audit of
+v1.1-v1.3 is untouched: the new section neither uses nor repairs the missing rotational soldering.
 
 ## Abstract
 
@@ -60,6 +68,17 @@ Upstream input: O29 / Q7 (admissibility construction selects V_rho isomorphic to
 Downstream: Q14 and the fermionic-matter sub-programme (univalence, spinorial carrier,
 Lorentz / weak SU(2) separation).
 
+## Repository Contents
+
+```
+spin-rotation-note/
+├── code/        # Reproduction script for the v1.4 Higgs-transversality section (+ requirements.txt)
+├── tex/         # LaTeX sources (main + cosmochrony-bibliography.bib)
+├── out/         # Compiled paper PDF (SpinRotationNote.pdf)
+├── zenodo.json  # Zenodo deposition metadata
+└── README.md
+```
+
 ## Build
 
 ```
@@ -67,3 +86,17 @@ Lorentz / weak SU(2) separation).
 ```
 
 Output: `out/SpinRotationNote.pdf`.
+
+## Reproducibility (v1.4 Higgs-transversality section)
+
+All identities of Section 10 ("Downstream boundary: chiral transversality and Higgs-typed composite
+channels") are verified by exact symbolic computation, no sampling:
+
+```
+python3 -m venv .venv
+./.venv/bin/pip install -r code/requirements.txt
+./.venv/bin/python code/front_spinorial_higgs_transversality.py
+```
+
+Pinned dependency: `sympy==1.14.0` (`code/requirements.txt`). The script exits 0 with every
+identity verified; no seeds or sampling are involved.
