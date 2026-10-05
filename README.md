@@ -21,7 +21,7 @@ numbers (the doublet H or its conjugate Htilde) in every tree-level Yukawa secto
 v1.5 restates the orientation sentence of the soldering inventory under the final contract of the AOG note: the
 chiral orientation result of CHO holds in the inherited central-phase convention and under [H-WS]; the exclusion of a
 residual spin-Galois phase holds only under [H-Spin] (a soldering hypothesis, taken as an input), [H-WS], the
-modelling premise [M] and the central-phase convention, and is therefore not independent of the soldering question.
+modelling premise [M], its explicit boost premise [B] and the central-phase convention, and is therefore not independent of the soldering question.
 Spinorial chiral structure is thereby
 shown to permit Higgs-typed composite channels, but not to determine whether, which, or at what scale
 such a channel condenses; three data remain explicitly open (an ambient doubling beyond V_rho, an
