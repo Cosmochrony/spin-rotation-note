@@ -4,7 +4,7 @@ J. Beau, Independent Researcher, France
 
 ## Status
 
-Preprint, v1.4. Companion conceptual/structural audit of the fermionic-matter sub-programme.
+Preprint, v1.5 (local candidate; last deposited version 1.4). Companion conceptual/structural audit of the fermionic-matter sub-programme.
 DOI: [10.5281/zenodo.21380026](https://doi.org/10.5281/zenodo.21380026)
 v1.1 adds the soldering-audit section: the Veronese obstruction lemma and the spinorial-soldering
 indeterminacy proposition.
@@ -18,6 +18,10 @@ v1.4 adds an independent downstream reconnaissance, entirely separate from the s
 exact representation audit under Spin(3,1) x SU(3)_c x SU(2)_L x U(1)_Y shows that the
 Dirac-conjugated fermionic bilinear psibar_R psi_L carries exactly Higgs-typed electroweak quantum
 numbers (the doublet H or its conjugate Htilde) in every tree-level Yukawa sector (e, d, u).
+v1.5 restates the orientation sentence of the soldering inventory under the final contract of the AOG note: the
+chiral orientation result of CHO holds in the inherited central-phase convention and under [H-WS]; the exclusion of a
+residual spin-Galois phase holds only under [H-Spin] (a soldering hypothesis, taken as an input), [H-WS], the
+modelling premise [M] and the central-phase convention, and is therefore not independent of the soldering question.
 Spinorial chiral structure is thereby
 shown to permit Higgs-typed composite channels, but not to determine whether, which, or at what scale
 such a channel condenses; three data remain explicitly open (an ambient doubling beyond V_rho, an
