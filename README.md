@@ -4,7 +4,7 @@ J. Beau, Independent Researcher, France
 
 ## Status
 
-Preprint, v1.5 (local candidate; last deposited version 1.4). Companion conceptual/structural audit of the fermionic-matter sub-programme.
+Preprint, v1.5. Companion conceptual/structural audit of the fermionic-matter sub-programme.
 DOI: [10.5281/zenodo.21380026](https://doi.org/10.5281/zenodo.21380026)
 v1.1 adds the soldering-audit section: the Veronese obstruction lemma and the spinorial-soldering
 indeterminacy proposition.
