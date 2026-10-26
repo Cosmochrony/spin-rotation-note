@@ -4,7 +4,7 @@ J. Beau, Independent Researcher, France
 
 ## Status
 
-Preprint, v1.5. Companion conceptual/structural audit of the fermionic-matter sub-programme.
+Preprint, v1.6. Companion conceptual/structural audit of the fermionic-matter sub-programme.
 DOI: [10.5281/zenodo.21380026](https://doi.org/10.5281/zenodo.21380026)
 v1.1 adds the soldering-audit section: the Veronese obstruction lemma and the spinorial-soldering
 indeterminacy proposition.
@@ -22,6 +22,10 @@ v1.5 restates the orientation sentence of the soldering inventory under the fina
 chiral orientation result of CHO holds in the inherited central-phase convention and under [H-WS]; the exclusion of a
 residual spin-Galois phase holds only under [H-Spin] (a soldering hypothesis, taken as an input), [H-WS], the
 modelling premise [M], its explicit boost premise [B] and the central-phase convention, and is therefore not independent of the soldering question.
+v1.6 restates the normalisation item of the soldering inventory against the current sources: no spatial coefficient
+has an established value (Q8 leaves the common value of an invariant form free; Q10 bounds the coefficient ratio only
+under unestablished inputs; [U] is open in U1; Q11 leaves the temporal coefficient free), and the isotropic shape of the
+effective metric is not derived. The conclusion is unchanged: a Casimir-independent normalisation is missing.
 Spinorial chiral structure is thereby
 shown to permit Higgs-typed composite channels, but not to determine whether, which, or at what scale
 such a channel condenses; three data remain explicitly open (an ambient doubling beyond V_rho, an
